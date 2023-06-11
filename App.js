@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 //View -> UIView
 export default function App() {
 
-  console.log("App executed!");
+  console.log("App executed!", Datetime.now());
   return (
     <View style={styles.container}>
       <Text>I love you baby!</Text>

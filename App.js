@@ -1,29 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, useWindowDimensions, Text, View, SafeAreaView} from 'react-native';
+import React from 'react'
+import { View} from 'react-native';
 
 //View -> UIView
 export default function App() {
-const deviceDimensions = useWindowDimensions();
 
 console.log(deviceDimensions);
 
   return (
-    <SafeAreaView style={styles.container}>
     <View style={{
-      backgroundColor: "dodgerblue",
-      width: "50%",
-      height: "15%"
+      backgroundColor: "white",
+      flex: 1,
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "flex-end"
     }}>
+      <View style={{
+        backgroundColor: "gold",
+        width: 100,
+        height: 300
+      }}/>
+      <View style={{
+        backgroundColor: "dodgerblue",
+        width: 100,
+        height: 200
+      }}/>
+      <View style={{
+        backgroundColor: "pink",
+        width: 100,
+        height: 100
+      }}/>
     </View>
-      </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff' ,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

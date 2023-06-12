@@ -11,21 +11,33 @@ console.log(deviceDimensions);
       backgroundColor: "white",
       flex: 1,
       flexDirection: "row",
-      justifyContent: "center",
-      alignItems: "flex-end"
+      justifyContent: "center", //main axis
+      alignItems: "center", // secondary axis
+      alignContent: "center", // allows for adjustment of items when they wrap to next line/overflow
+      flexWrap: "wrap" //required for alignContent
     }}>
       <View style={{
         backgroundColor: "gold",
         width: 100,
-        height: 300
+        height: 100
       }}/>
       <View style={{
         backgroundColor: "dodgerblue",
         width: 100,
-        height: 200
+        height: 100
       }}/>
       <View style={{
         backgroundColor: "pink",
+        width: 100,
+        height: 100
+      }}/>
+      <View style={{
+        backgroundColor: "grey",
+        width: 100,
+        height: 100
+      }}/>
+      <View style={{
+        backgroundColor: "greenyellow",
         width: 100,
         height: 100
       }}/>
